@@ -9,6 +9,7 @@ module.exports = {
                 'background-mobile': "url('/img/background-mobile.png')",
                 'background-tablet': "url('/img/background-tablet.png')",
                 'background': "url('/img/background.png')",
+                'background-characters': "url('/img/background-characters.png')",
             },
             height: {
                 '150': '58rem',
