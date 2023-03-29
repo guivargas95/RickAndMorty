@@ -9,7 +9,7 @@
     }
 
     .backInLeft {
-        animation: backInLeft;
+        animation: zoomInUp;
         animation-duration: 2s;
     }
 }
