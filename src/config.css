@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .bounceInDown {
+        animation: bounceInDown;
+        animation-duration: 2s;
+    }
+
+    .backInLeft {
+        animation: backInLeft;
+        animation-duration: 2s;
+    }
+}
