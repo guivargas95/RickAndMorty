@@ -3,13 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
-    .bounceInDown {
-        animation: bounceInDown;
-        animation-duration: 2s;
-    }
 
     .backInLeft {
         animation: zoomInUp;
         animation-duration: 2s;
     }
+
 }
