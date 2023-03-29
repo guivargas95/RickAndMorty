@@ -4,8 +4,13 @@
 
 @layer utilities {
 
-    .backInLeft {
+    .zoomInUp {
         animation: zoomInUp;
+        animation-duration: 2s;
+    }
+
+    .backInDown {
+        animation: backInDown;
         animation-duration: 2s;
     }
 
