@@ -9,6 +9,7 @@ import Home from './pages/home';
 import './config.css'
 import CharactersPage from './pages/characters';
 import ScrollToTop from './components/scrollToTop';
+import Character from './pages/characters/singleCharacter';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/characters/:page" element={<CharactersPage />} />
+        <Route path="/characters/single/:id" element={<Character />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
