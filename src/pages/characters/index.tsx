@@ -28,7 +28,7 @@ export default function CharactersPage() {
             <div className="flex ml-auto mr-auto">
                 <img className="w-96 lg:w-128 backInDown" src="/img/characters.png" alt="" />
             </div>
-            <section className="w-3/4 md:w-auto ml-auto mr-auto">
+            <section className="md:w-auto ml-auto mr-auto">
                 <Link to="/"><img className="w-12 md:w-36 fadeInDown" src="/img/back.png" /></Link>
                 <ul className="flex flex-col justify-center text-center md:grid md:grid-cols-2 lg:grid-cols-3">
                     {characters?.map(response => {
