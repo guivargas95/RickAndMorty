@@ -11,7 +11,7 @@ export default function CharactersPage() {
     const { data: characters } = AllCharacters<iCharacters[]>(httpLink);
     const { info: info } = AllCharacters<iInfo>(httpLink);
 
-    console.log(`Ta aqui ó ${info?.next.substring(info?.next.length - 1)}`)
+    
 
     function nextPage() {
         setHttpLink(`${info?.next}`)
