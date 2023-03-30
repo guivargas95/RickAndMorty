@@ -14,4 +14,9 @@
         animation-duration: 0.5s;
     }
 
+    .fadeInDown {
+        animation: fadeInDown;
+        animation-duration: 1s;
+    }
+
 }
