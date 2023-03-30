@@ -10,6 +10,7 @@ module.exports = {
                 'background-tablet': "url('/img/background-tablet.png')",
                 'background': "url('/img/background.png')",
                 'background-characters': "url('/img/background-characters.png')",
+                'background-characters-mobile': "url('/img/background-characters-mobile.png')",
             },
             height: {
                 '150': '58rem',
