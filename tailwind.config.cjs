@@ -9,7 +9,7 @@ module.exports = {
                 'background-mobile': "url('/img/background-mobile.png')",
                 'background-tablet': "url('/img/background-tablet.png')",
                 'background': "url('/img/background.png')",
-                'background-characters': "url('/img/background-characters.png')",
+                'background-characters': "url('/img/background-characters.jpg')",
                 'background-characters-mobile': "url('/img/background-characters-mobile.png')",
             },
             height: {
@@ -26,6 +26,12 @@ module.exports = {
                 '128': '32rem',
                 '112': '28rem',
 
+            },
+
+            colors: {
+                paleta: {
+                    marrom: '#371B0F',
+                },
             },
         },
     },
