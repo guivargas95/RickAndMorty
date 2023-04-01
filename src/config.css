@@ -19,4 +19,14 @@
         animation-duration: 1s;
     }
 
+    .backInLeft {
+        animation: backInLeft;
+        animation-duration: 1s;
+    }
+
+    .backInRight {
+        animation: backInRight;
+        animation-duration: 1s;
+    }
+
 }
