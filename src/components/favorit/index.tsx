@@ -14,11 +14,13 @@ export default function Favorit(props: any) {
         if (localStorage.getItem(name) == null || localStorage.getItem(name) == "false") {
             localStorage.setItem(name, "true")
             setIsFavorit("true")
+            console.log(localStorage)
         }
 
         else if (localStorage.getItem(name) == "true") {
             localStorage.setItem(name, "false")
             setIsFavorit("false")
+            console.log(localStorage)
         }
     }
 
