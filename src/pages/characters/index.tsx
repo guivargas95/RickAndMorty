@@ -46,7 +46,7 @@ export default function CharactersPage() {
                                     {response?.status == "unknown" && (<h3 className="bg-yellow-500 rounded-lg mr-1 ml-1 font-bold">{response.status}</h3>)}
                                 </div>
                                 <div>
-                                    <Favorit name={response.name} />
+                                    <Favorit name={response.id} />
                                 </div>
                             </li>
 
