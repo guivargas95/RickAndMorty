@@ -2,21 +2,33 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Favorit from "../../../components/favorit";
 import { SomeCharacters } from "../../../hooks/someCharacters";
-
 import { iCharacters } from "../../../types/characters";
 
 export default function FavoritCharacters() {
 
     let local = localStorage;
     let favoritList: any[] = [];
-    let [httpSearchString, setHttpSearchString] = useState("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15")
+    let emptyString = ""
+
+    for (let key in local) {
+        if (localStorage.getItem(key) == "true") {
+            favoritList.push(key)
+        }
+    }
+    if (favoritList.length != 0) {
+        favoritList.forEach(element => {
+            emptyString = emptyString + element + ","
+        });
+    }
+    
+    let [httpSearchString, setHttpSearchString] = useState(emptyString)
     let [haveFavorit, setHaveFavorit] = useState(true)
     const [httpLink, setHttpLink] = useState(`https://rickandmortyapi.com/api/character/${httpSearchString}`)
     const { data: characters } = SomeCharacters<iCharacters[]>(httpLink);
 
     useEffect(() => {
         favoritList = []
-        let emptyString = ""
+        emptyString = ""
         for (let key in local) {
             if (localStorage.getItem(key) == "true") {
                 favoritList.push(key)
