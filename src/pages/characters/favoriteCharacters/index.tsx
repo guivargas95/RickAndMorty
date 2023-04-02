@@ -78,7 +78,7 @@ export default function FavoritCharacters() {
                         <div>
                             <h2 className="mt-20">Sorry :c You don't have favorits yet</h2>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="flex flex-col md:flex-row justify-center">
                             <h2>To choose your favorit characters: </h2>
                             <Link to="/characters/1"><button className="bg-green-400 rounded-lg">Click Here</button></Link>
                         </div>
