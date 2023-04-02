@@ -13,7 +13,9 @@
 
 <h3>Characters Page</h3>
 
-![image](https://user-images.githubusercontent.com/77880134/218168278-f4707ba4-bf16-4f2b-b252-8e67520538c3.png)
+![image](https://user-images.githubusercontent.com/77880134/229377019-3b7e2d46-1b3d-4be7-9e47-f28b3ca99a28.png)
+![image](https://user-images.githubusercontent.com/77880134/229377029-121a6883-6dd0-40ab-978b-163dfec3ad78.png)
+
 
 <h3>Single character page</h3>
 
