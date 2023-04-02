@@ -20,7 +20,6 @@ export default function Favorit(props: any) {
         else if (localStorage.getItem(name) == "true") {
             localStorage.setItem(name, "false")
             setIsFavorit("false")
-            console.log(localStorage)
         }
     }
 
