@@ -10,7 +10,7 @@ import './config.css'
 import CharactersPage from './pages/characters';
 import ScrollToTop from './components/scrollToTop';
 import Character from './pages/characters/singleCharacter';
-import FavoritCharacters from './pages/characters/favoritCharacters';
+import FavoritCharacters from './pages/characters/favoriteCharacters';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

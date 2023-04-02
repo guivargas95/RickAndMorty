@@ -50,7 +50,7 @@ export default function FavoritCharacters() {
     return (
         <div className="flex flex-col bg-gradient-to-b from-blue-700 to-blue-900 min-h-screen">
             <div className="flex ml-auto mr-auto">
-                <img className="w-96 lg:w-128 backInDown" src="/img/favorits.png" alt="" />
+                <img className="w-96 lg:w-128 backInDown" src="/img/favorites.png" alt="" />
             </div>
             <section className="md:w-auto ml-auto mr-auto">
                 <Link to="/"><img className="w-12 md:w-36 fadeInDown" src="/img/back.png" /></Link>
