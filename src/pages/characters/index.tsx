@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, SetStateAction } from "react"
 import { Link, useParams } from "react-router-dom";
 import Favorit from "../../components/favorit";
 import { AllCharacters } from "../../hooks/allCharacters"
@@ -11,8 +11,10 @@ export default function CharactersPage() {
     const [httpLink, setHttpLink] = useState(`https://rickandmortyapi.com/api/character?page=${page}`)
     const { data: characters } = AllCharacters<iCharacters[]>(httpLink);
     const { info: info } = AllCharacters<iInfo>(httpLink);
-
-
+    const [stringToSearch, setStringToSearch] = useState('');
+    const handleChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+        setStringToSearch(event.target.value);
+    };
 
     function nextPage() {
         setHttpLink(`${info?.next}`)
@@ -24,6 +26,13 @@ export default function CharactersPage() {
         }
     }
 
+    function urlToSearch() {
+        if (stringToSearch != "") {
+
+            setHttpLink(`https://rickandmortyapi.com/api/character/?name=${stringToSearch.replace(" ", "%20")}`);
+        }
+    }
+
     return (
         <div className="flex flex-col bg-gradient-to-b from-blue-700 to-blue-900">
             <div className="flex ml-auto mr-auto">
@@ -31,6 +40,10 @@ export default function CharactersPage() {
             </div>
             <section className="md:w-auto ml-auto mr-auto">
                 <Link to="/"><img className="w-12 md:w-36 fadeInDown" src="/img/back.png" /></Link>
+                <div className="flex justify-center">
+                    <input className="bg-amber-100 shadow-sm shadow-black border-solid border-2 border-grey-light" placeholder="Name of character" onChange={handleChange} value={stringToSearch} id="" />
+                    <button className="bg-green-600 font-bold text-white rounded-lg" onClick={urlToSearch}>Search!</button>
+                </div>
                 <ul className="flex flex-col justify-center text-center md:grid md:grid-cols-2 lg:grid-cols-3">
                     {characters?.map(response => {
 

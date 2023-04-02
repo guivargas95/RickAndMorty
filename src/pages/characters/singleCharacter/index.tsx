@@ -14,12 +14,9 @@ export default function Character() {
     const { location: location } = SingleCharacter<iOriginLocation>(httpLink);
     const { origin: origin } = SingleCharacter<iOriginLocation>(httpLink);
     const navigate = useNavigate();
-    
-
-   
 
     return (
-        <div className="bg-paleta-marrom bg-background-characters bg-cover bg-no-repeat md:h-screen">
+        <div className="bg-paleta-marrom bg-background-characters bg-cover bg-no-repeat md:min-h-screen">
             <div className="flex justify-center">
                 <img className="backInDown" src="/img/characterinfo.png" alt="" />
             </div>
