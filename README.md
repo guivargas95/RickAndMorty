@@ -13,8 +13,6 @@
 
 <h3>Characters Page</h3>
 
-![image](https://user-images.githubusercontent.com/77880134/218168051-41981a86-c297-4fb8-9073-193a4d4beb4c.png)
-![image](https://user-images.githubusercontent.com/77880134/218168120-4bfef377-f5a3-4df8-8c84-377687bf82a2.png)
 ![image](https://user-images.githubusercontent.com/77880134/218168278-f4707ba4-bf16-4f2b-b252-8e67520538c3.png)
 
 <h3>Single character page</h3>
