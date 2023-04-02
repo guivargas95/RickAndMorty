@@ -20,7 +20,7 @@ export default function FavoritCharacters() {
             emptyString = emptyString + element + ","
         });
     }
-    
+
     let [httpSearchString, setHttpSearchString] = useState(emptyString)
     let [haveFavorit, setHaveFavorit] = useState(true)
     const [httpLink, setHttpLink] = useState(`https://rickandmortyapi.com/api/character/${httpSearchString}`)
@@ -76,7 +76,7 @@ export default function FavoritCharacters() {
                 {haveFavorit == false && (
                     <div className="text-center text-3xl font-bold flex flex-col justify-center">
                         <div>
-                            <h2 className="mt-20">Sowwy :c You don't have favorits yet</h2>
+                            <h2 className="mt-20">Sorry :c You don't have favorits yet</h2>
                         </div>
                         <div className="flex justify-center">
                             <h2>To choose your favorit characters: </h2>
