@@ -40,4 +40,11 @@
 
 <p>If you want to try it you just need to access the follow link: https://rick-and-morty-six-rho.vercel.app/</p>
 
-<p>If you want to run the project in your computer you will need install node and clone the git repository, install all the dependencies listed and run with npm run dev command</p>
+<p>If you want to run the project in your computer follow the steps:</p>
+<ul>
+<li>1- Using your favorit code editor, clone the repository</li>
+<li>2- cd to the project folder: "cd .\RickAndMorty\"</li>
+<li>Run the command "npm install package.json" to install project dependecies</li>
+<li>Run "npm audit fix --force" to solve some security issues</li>
+<li>Done! Now, just run the app with "npm run dev" command</li>
+</ul>
