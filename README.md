@@ -44,7 +44,7 @@
 <ul>
 <li>1- Using your favorit code editor, clone the repository</li>
 <li>2- cd to the project folder: "cd .\RickAndMorty\"</li>
-<li>Run the command "npm install package.json" to install project dependecies</li>
-<li>Run "npm audit fix --force" to solve some security issues</li>
-<li>Done! Now, just run the app with "npm run dev" command</li>
+<li>3- Run the command "npm install package.json" to install project dependecies</li>
+<li>4- Run "npm audit fix --force" to solve some security issues</li>
+<li>5- Done! Now, just run the app with "npm run dev" command</li>
 </ul>
