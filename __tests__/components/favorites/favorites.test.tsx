@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from '@testing-library/react'
 import Favorites from "../../../src/components/favorites";
 
-describe('MyComponent', () => {
+describe('Favorites', () => {
   test('renders correctly', () => {
     const { container } = render(<Favorites />);
 
