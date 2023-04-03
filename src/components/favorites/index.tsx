@@ -1,38 +1,38 @@
 import { useEffect, useState } from "react"
 
-export default function Favorit(props: any) {
+export default function Favorites(props: any) {
 
     const name = props.name;
-    let [isFavorit, setIsFavorit] = useState(localStorage.getItem(name));
+    let [isFavorite, setIsFavorite] = useState(localStorage.getItem(name));
 
     useEffect(() => {
-        setIsFavorit(localStorage.getItem(name))
+        setIsFavorite(localStorage.getItem(name))
     }, [localStorage.getItem(name)])
 
     function Changefavorit() {
 
         if (localStorage.getItem(name) == null || localStorage.getItem(name) == "false") {
             localStorage.setItem(name, "true")
-            setIsFavorit("true")
+            setIsFavorite("true")
             console.log(localStorage)
         }
 
         else if (localStorage.getItem(name) == "true") {
             localStorage.setItem(name, "false")
-            setIsFavorit("false")
+            setIsFavorite("false")
         }
     }
 
 
     return (
         <div>
-            {isFavorit == "true" && (
+            {isFavorite == "true" && (
                 <button><img className="w-12 mr-auto ml-auto" src="/img/star.png" onClick={Changefavorit} /></button>
             )}
-            {isFavorit == "false" && (
+            {isFavorite == "false" && (
                 <button><img className="w-12 mr-auto ml-auto" src="/img/blackstar.png" onClick={Changefavorit} /></button>
             )}
-            {isFavorit == null && (
+            {isFavorite == null && (
                 <button><img className="w-12 mr-auto ml-auto" src="/img/blackstar.png" onClick={Changefavorit} /></button>
             )}
         </div>
