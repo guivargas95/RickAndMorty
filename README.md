@@ -1,7 +1,7 @@
 <h1>Rick and Morty Project</h1>
 
 <h2>Purpose of project</h2>
-<p>This project have purpose to consume The Rick And Morty API  showing the characters and allowing the user to search for any character at the Database and choose your favorites</p>
+<p>This project have purpose to consume The Rick And Morty API  showing the characters and allowing the user to search for any character at the database and choose your favorites</p>
 <p>All the project is responsive and it was developed with mobile-first methodology with TailwindCSS</p>
 
 <h2>Screenshots
