@@ -1,6 +1,6 @@
 import { useState, SetStateAction } from "react"
 import { Link, useParams } from "react-router-dom";
-import Favorit from "../../components/favorit";
+import Favorit from "../../components/favorites";
 import { AllCharacters } from "../../hooks/allCharacters"
 import { iCharacters } from "../../types/characters"
 import { iInfo } from "../../types/info";

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Favorit from "../../../components/favorit";
+import Favorit from "../../../components/favorites";
 import { SomeCharacters } from "../../../hooks/someCharacters";
 import { iCharacters } from "../../../types/characters";
 

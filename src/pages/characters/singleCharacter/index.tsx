@@ -4,7 +4,7 @@ import { SingleCharacter } from "../../../hooks/singleCharacter";
 import { iOriginLocation } from "../../../types/originLocation";
 import { iSingleCharacter } from "../../../types/singleCharacter";
 import { useNavigate } from "react-router-dom";
-import Favorit from "../../../components/favorit";
+import Favorit from "../../../components/favorites";
 
 export default function Character() {
 
