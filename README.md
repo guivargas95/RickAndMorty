@@ -42,7 +42,7 @@
 
 <p>If you want to run the project in your computer follow the steps:</p>
 <ul>
-<li>1- Using your favorit code editor, clone the repository</li>
+<li>1- Using your favorite code editor, clone the repository</li>
 <li>2- cd to the project folder: "cd .\RickAndMorty\"</li>
 <li>3- Run the command "npm install package.json" to install project dependecies</li>
 <li>4- Run "npm audit fix --force" to solve some security issues</li>
