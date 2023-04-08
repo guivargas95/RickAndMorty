@@ -46,5 +46,5 @@
 <li>2- cd to the project folder: "cd .\RickAndMorty\"</li>
 <li>3- Run the command "npm install package.json" to install project dependecies</li>
 <li>4- Run "npm audit fix --force" to solve some security issues</li>
-<li>5- Done! Now, just run the app with "npm run dev" command</li>
+<li>5- Done! Now, just run the app with "npm run dev" command and get started</li>
 </ul>
